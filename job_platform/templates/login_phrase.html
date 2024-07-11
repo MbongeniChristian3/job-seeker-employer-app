@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Job Platform</title>
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container div {
+            margin-bottom: 1em;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: .5em;
+        }
+        .form-container input {
+            width: 100%;
+            padding: .5em;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Platform</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form method="POST">
+                <!-- Flask-WTF form fields would be rendered here -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" size="32">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" size="32">
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Job Platform</p>
+    </footer>
+</body>
+</html>
